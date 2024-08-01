@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+}
+
+#journal{
+    font-family: Monospace;
+    font-style: italic;
+    color: white;
+    font-size: 80px;
+}
+
+#links{
+    text-align: center;
+    display: flex;
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+    height: 250px;
+    width: 1000px;
+    margin: 100px;
+}
+
+#M{
+    color: deepskyblue;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+#y{
+    color: deeppink;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+#MyTasks, #MyMarks, #MyDocuments{
+    text-decoration: none;
+    border-style: solid;
+    border-width: 5px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#MyTasks{
+    margin: 30px;
+    border-color: blue;
+    color: blue;
+}
+
+#MyMarks{
+    margin: 30px;
+    border-color: green;
+    color: green;
+}
+
+#MyDocuments{
+    margin: 30px;
+    border-color: purple;
+    color: purple;
+}
+
+#logo{
+    font-size: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+.image{
+    margin: 30px;
+    height: 100px;
+    width: 100px;
+}
+
+#profile_image{
+    height: 80px;
+    width: 80px;
+    text-align: right;
+}
+.dropbtn {
+  margin: 0;
+  padding: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: transparent;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.dropdown{
+    margin-left: 500px;
+}
+
+.navbar-brand{
+    margin-left: 10px;
+}
+
+.container{
+    /* background-color: deepskyblue; */
+    padding-top: 50px
+}
+
+#change-height{
+    width: 1100px;
+    height: 330px;
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 800px) {
+    #links{
+        text-align: center;
+        display: flex;
+        border-style: solid;
+        border-width: 10px;
+        border-color: black;
+        height: 250px;
+        width: 1000px;
+        margin: 100px;
+    }
+
+    .dropdown{
+        margin-left: 500px;
+    }
+
+    #change-height{
+        width: 1100px;
+        height: 330px;
+        margin-left: 20px;
+    }
+ }
+ @media screen and (min-width:801px) and (max-width: 1600px) {
+    #links{
+        text-align: center;
+        display: flex;
+        border-style: solid;
+        border-width: 10px;
+        border-color: black;
+        height: 250px;
+        width: 1000px;
+        margin: 150px 200px;
+    }
+
+    .dropdown{
+        margin-left: 700px;
+    }
+
+    #change-height{
+        width: 1300px;
+        height: 400px;
+        margin-left: 50px;
+    }
+ }

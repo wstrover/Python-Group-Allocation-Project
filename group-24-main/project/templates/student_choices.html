@@ -1,0 +1,54 @@
+{% extends 'LoggedInbase.html' %}
+{%  block title %}
+    Student Page
+{% endblock %}
+{% block content %}
+    <div>
+        <span style = "float:right">
+            <button><a href="/signIn">Sign out</a></button>
+        </span>
+    </div>
+    <div class="container" style="width: 10000000px; height: 450px; padding-top: 0;">
+
+        <h1 class="h3 mb-3 font-weight-normal" style="text-align: left;">
+            Group allocation
+        </h1>
+        <br>
+        <h>Make your project choices</h>
+        <br>
+        <br>
+        <form method="post">
+            {{ form.csrf_token }}
+        {{ form.username.label() }}<br>
+        {{ form.username( placeholder="Username") }}<br>
+
+
+        <!--
+        {{ form.first_choice.label() }}<br>
+        {{ form.first_choice( placeholder="Username")  }}<br>
+        {{ form.second_choice.label() }}<br>
+        {{ form.second_choice( placeholder="Username")  }}<br>
+        {{ form.third_choice.label() }}<br>
+        {{ form.third_choice( placeholder="Username")  }}<br>
+        -->
+
+        {{ form.first_choice.label() }}<br>
+        {{ form.first_choice }}<br>
+
+        {{ form.second_choice.label() }}<br>
+        {{ form.second_choice }}<br>
+
+        {{ form.third_choice.label() }}<br>
+        {{ form.third_choice }}<br>
+
+        <br>
+        {{ form.submit(class="btn btn-dark btn-block btn-primary")}}
+        </form>
+    </div>
+{% endblock %}
+
+
+
+
+
+

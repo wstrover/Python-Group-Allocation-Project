@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Register Page
+{% endblock %}
+
+{% block content %}
+    <div class="container" style="width: 500px; height: 450px; padding-top: 0;">
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <h1 class="h3 mb-3 font-weight-normal" style="text-align: center;">
+                Student Sign In
+            </h1>
+            {{ form.username.label() }}
+            {{ form.username(class="form-control", placeholder="Username") }}
+
+            {{ form.password.label() }}
+            {{ form.password(class="form-control", placeholder="Password") }}
+
+            <a href="{{ url_for('register') }}" style="color:maroon;">Not registered yet?</a>
+            <div style="padding: 0; text-align: center; margin-top: 10px;">
+                {{ form.submit(class="btn btn-dark btn-block btn-primary")}}
+            </div>
+        </form>
+    </div>
+{% endblock %}
